@@ -1,5 +1,5 @@
-import URLTools from './urls';
-import LinkFinder from './links';
+// import URLTools from './urls';
+// import LinkFinder from './links';
 
-URLTools.runTests();
-LinkFinder.runTests();
+// URLTools.runTests();
+// LinkFinder.runTests();

@@ -1,0 +1,15 @@
+{
+  "name": "node-site-crawler-tester",
+  "version": "1.0.0",
+  "description": "Testing for my node site crawler",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "author": "Jesse Conner",
+  "license": "ISC",
+  "dependencies": {
+    "simple-node-site-crawler": "^0.0.1",
+    "typescript": "^4.3.2"
+  }
+}

@@ -1,4 +1,5 @@
 
+/*
 function findBridge(body: string): Array<string> {
 	return find(body, `https://jesseconner.ca`);
 }
@@ -60,3 +61,4 @@ const testArrays: Array<ArrayTestGroup> = [
 
 	},
 ]
+*/

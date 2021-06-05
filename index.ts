@@ -1,15 +1,14 @@
-import Crawler from './crawler';
+import Crawler from 'simple-node-site-crawler';
 
 async function run() {
 
-	//Crawler.crawlSite(`rootree.wpengine.com`);
+	await Crawler.crawlSite(`rootree.wpengine.com`);
+	Crawler.writeResults(`rootree.wpengine.com`);
 	const site = Crawler.loadResults(`rootree.wpengine.com`);
 	const results = site.filter(page => page.source != `https://rootree.wpengine.com/`);
-	console.log(results);
+	results.map(page => console.log(page.source));
 	
 	console.log(`Done!`);
 }
-
-
 
 run();
