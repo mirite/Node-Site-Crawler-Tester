@@ -2,11 +2,10 @@ import Crawler from 'simple-node-site-crawler';
 
 async function run() {
 
-	await Crawler.crawlSite(`rootree.wpengine.com`);
-	Crawler.writeResults(`rootree.wpengine.com`);
-	const site = Crawler.loadResults(`rootree.wpengine.com`);
-	const results = site.filter(page => page.source != `https://rootree.wpengine.com/`);
-	results.map(page => console.log(page.source));
+	//await Crawler.crawlSite(`formerfibres.ca`);
+	const site = Crawler.loadResults(`formerfibres.ca`);
+	const results = site.filter(page => page.responseCode != 200);
+	results.map(page => console.log(`${page.target} ${page.responseCode} from ${page.source}`));
 	
 	console.log(`Done!`);
 }
